@@ -1,6 +1,41 @@
 use_default_settings: true
 
+general:
+debug: false
+instance_name: "SearXNG"
+privacypolicy_url: false
+donation_url: false
+contact_url: false
+enable_metrics: false
+open_metrics: false
+
+search:
+safe_search: 0
+autocomplete: "duckduckgo"
+autocomplete_min: 4
+favicon_resolver: "google"
+default_lang: "en"
+ban_time_on_fail: 5
+max_ban_time_on_fail: 120
+formats:
+- html
+- json
+max_page: 0
+
 server:
+port: 8080
+bind_address: "0.0.0.0"
 secret_key: "7f3a91c8e24b6d10a5f927c41e8b63d2"
 limiter: false
+public_instance: false
 image_proxy: true
+
+outgoing:
+request_timeout: 5.0
+pool_connections: 100
+pool_maxsize: 20
+enable_http2: true
+useragent_suffix: ""
+
+valkey:
+url: valkey://localhost:6379/0
