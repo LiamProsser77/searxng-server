@@ -1,18 +1,17 @@
 use_default_settings: true
 
 general:
+debug: false
 instance_name: "SearXNG"
 
-server:
-secret_key: "change-this-to-a-long-random-string"
-bind_address: "0.0.0.0"
-port: 8080
-limiter: false
-
 search:
+default_lang: "auto"
 formats:
 - html
 - json
 
-ui:
-static_use_hash: true
+server:
+secret_key: "GronnFalkSearchServer-CHANGE-THIS-SECRET"
+limiter: false
+public_instance: false
+image_proxy: true
