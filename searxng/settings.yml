@@ -11,7 +11,7 @@ formats:
 - json
 
 server:
-secret_key: "GronnFalkSearchServer-CHANGE-THIS-SECRET"
+secret_key: "7f3a91c8e24b6d10a5f927c41e8b63d2"
 limiter: false
 public_instance: false
 image_proxy: true
