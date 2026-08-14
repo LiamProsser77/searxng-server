@@ -3,9 +3,15 @@ use_default_settings: true
 general:
 debug: false
 instance_name: "SearXNG"
+privacypolicy_url: false
+donation_url: false
+contact_url: false
+enable_metrics: false
+open_metrics: false
 
 search:
 safe_search: 0
+autocomplete: "duckduckgo"
 formats:
 - html
 - json
