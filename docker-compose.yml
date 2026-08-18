@@ -1,19 +1,19 @@
 services:
-redis:
-container_name: searxng-redis
-image: redis:alpine
-restart: unless-stopped
-command: redis-server --save "" --appendonly no
+  redis:
+    container_name: searxng-redis
+    image: redis:alpine
+    restart: unless-stopped
+    command: redis-server --save "" --appendonly no
 
-searxng:
-container_name: searxng
-image: searxng/searxng:latest
-restart: unless-stopped
-depends_on:
-- redis
-ports:
-- "8080:8080"
-environment:
-- SEARXNG_BASE_URL=http://localhost:8080/
-volumes:
-- ./searxng:/etc/searxng
+  searxng:
+    container_name: searxng
+    image: searxng/searxng:latest
+    restart: unless-stopped
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+    environment:
+      - SEARXNG_BASE_URL=http://localhost:8080/
+    volumes:
+      - ./searxng:/etc/searxng
