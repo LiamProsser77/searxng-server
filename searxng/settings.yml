@@ -7,7 +7,7 @@ general:
   donation_url: false
   contact_url: false
   enable_metrics: false
-  open_metrics: false
+  open_metrics: ""
 
 search:
   safe_search: 0
