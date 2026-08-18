@@ -24,7 +24,7 @@ search:
 server:
   port: 8080
   bind_address: "0.0.0.0"
-  secret_key: "CHANGE_THIS_TO_A_LONG_RANDOM_SECRET"
+  secret_key: "gR7xQ2mP9vL4nK8sW3zF6aT1yU5cB0dE"
   limiter: false
   public_instance: false
   image_proxy: true
